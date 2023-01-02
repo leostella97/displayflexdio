@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - align items</title>
+    <style>
+        .container{
+            max-width: 350px;
+            border: 1px solid black;
+            display: flex;
+        }
+        .item{
+            background-color: blueviolet;
+            margin: 5px;
+            color: white;
+            text-align: center;
+            padding: 3px;
+            flex: 1;
+        }
+        .center{
+            align-items: center;
+        }
+        .stretch{
+            align-items: stretch;
+        }
+        .flex-start{
+            align-items: flex-start;
+        }
+        .flex-end{
+            align-items: flex-end;
+        }
+        .baseline{
+            align-items: baseline;
+        }
+        .inherit{
+            align-items: inherit;
+        }
+        .initial{
+            align-items: initial;
+        }
+        .unset{
+            align-items: unset;
+        }
+        .column{
+            flex-direction: column;
+        }
+        .central{
+            height: 300px;
+            justify-content: center;
+            align-items: center;
+        }
+        .central .item{
+            flex: 0;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>row</h1>
+    <p>center</p>
+    <section class="container center flex">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2 Item 2</div>
+        <div class="item">Item 3 Item 3 Item 3</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+    </section>
+
+    <p>stretch</p>
+    <section class="container stretch flex">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2 Item 2</div>
+        <div class="item">Item 3 Item 3 Item 3</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+    </section>
+
+    <p>flex-start</p>
+    <section class="container flex-start flex">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2 Item 2</div>
+        <div class="item">Item 3 Item 3 Item 3</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+    </section>
+
+    <p>flex-end</p>
+    <section class="container flex-end flex">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2 Item 2</div>
+        <div class="item">Item 3 Item 3 Item 3</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+    </section>
+
+    <p>baseline</p>
+    <section class="container baseline flex">
+        <div class="item"><br>Item 1</div>
+        <div class="item">Item 2 Item 2</div>
+        <div class="item">Item 3 Item 3 Item 3</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+    </section>
+
+    <p>inherit</p>
+    <section class="container inherit flex">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2 Item 2</div>
+        <div class="item">Item 3 Item 3 Item 3</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+    </section>
+
+    <p>initial</p>
+    <section class="container initial flex">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2 Item 2</div>
+        <div class="item">Item 3 Item 3 Item 3</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+    </section>
+
+    <p>unset</p>
+    <section class="container unset flex">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2 Item 2</div>
+        <div class="item">Item 3 Item 3 Item 3</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+    </section>
+
+    <h1>column</h1>
+    <p>center</p>
+    <section class="container center flex column">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2 Item 2</div>
+        <div class="item">Item 3 Item 3 Item 3</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+    </section>
+
+    <p>stretch</p>
+    <section class="container stretch flex column">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2 Item 2</div>
+        <div class="item">Item 3 Item 3 Item 3</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+    </section>
+
+    <p>flex-start</p>
+    <section class="container flex-start flex column">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2 Item 2</div>
+        <div class="item">Item 3 Item 3 Item 3</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+    </section>
+
+    <p>flex-end</p>
+    <section class="container flex-end flex column">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2 Item 2</div>
+        <div class="item">Item 3 Item 3 Item 3</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+    </section>
+
+    <p>baseline</p>
+    <section class="container baseline flex column">
+        <div class="item"><br>Item 1</div>
+        <div class="item">Item 2 Item 2</div>
+        <div class="item">Item 3 Item 3 Item 3</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+    </section>
+
+    <p>inherit</p>
+    <section class="container inherit flex column">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2 Item 2</div>
+        <div class="item">Item 3 Item 3 Item 3</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+    </section>
+
+    <p>initial</p>
+    <section class="container initial flex column">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2 Item 2</div>
+        <div class="item">Item 3 Item 3 Item 3</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+    </section>
+
+    <p>unset</p>
+    <section class="container unset flex column">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2 Item 2</div>
+        <div class="item">Item 3 Item 3 Item 3</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+    </section>
+
+    <p>alinhamento central</p>
+    <section class="container central center">
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+    </section>
+</body>
+</html>
